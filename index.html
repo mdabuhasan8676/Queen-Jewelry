@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Dream Queen Jewelry | Gold, Silver &amp; Diamond Jewelry Worldwide</title>
+<meta name="description" content="Dream Queen Jewelry crafts gold, silver and diamond jewelry with transparent material-based pricing in US dollars, shipped worldwide.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Dream Queen Jewelry">
+<meta property="og:description" content="Gold, silver and diamond jewelry priced by material, shipped worldwide.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Manrope:wght@400;500;700&display=swap" rel="stylesheet">
+<script src="https://cdn.tailwindcss.com/3.4.17"></script>
+<script>
+/* Tailwind theme: every colour is a CSS variable so light/dark share one set of classes */
+tailwind.config={theme:{extend:{colors:{bg:'var(--bg)',surf:'var(--surf)',ink:'var(--ink)',mute:'var(--mute)',line:'var(--line)',rose:'var(--rose)',onrose:'var(--onrose)',deep:'var(--deep)',ondeep:'var(--ondeep)'},fontFamily:{serif:['"Cormorant Garamond"','Georgia','serif'],sans:['Manrope','system-ui','sans-serif']}}}}
+</script>
+<style>
+/* ---- Design tokens (light) ---- */
+:root{--bg:#faf7fa;--surf:#fff;--ink:#2a1233;--mute:#5e4b66;--line:#e6dbe9;--rose:#a8505f;--onrose:#fff;--deep:#2a1233;--ondeep:#f6edf3;
+ box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px);color-scheme:light}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#150a1a;--surf:#21112a;--ink:#f6edf3;--mute:#c4b2ca;--line:#3a2445;--rose:#e0909d;--onrose:#2a1233;--deep:#0d0511;--ondeep:#f6edf3;color-scheme:dark}}
+:root[data-theme="dark"]{--bg:#150a1a;--surf:#21112a;--ink:#f6edf3;--mute:#c4b2ca;--line:#3a2445;--rose:#e0909d;--onrose:#2a1233;--deep:#0d0511;--ondeep:#f6edf3;color-scheme:dark}
+html{scroll-behavior:smooth;scroll-padding-top:calc(5rem + env(safe-area-inset-top,0px))}
+body{background:var(--bg);color:var(--ink);font-family:Manrope,system-ui,sans-serif}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);background:var(--bg);z-index:60}
+:focus-visible{outline:3px solid var(--rose);outline-offset:3px;border-radius:4px}
+/* Reveal: a single, subtle entrance; disabled for reduced motion */
+.reveal{opacity:0;transform:translateY(14px);transition:opacity .6s ease,transform .6s ease}
+.reveal.in{opacity:1;transform:none}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}.reveal{opacity:1;transform:none;transition:none}}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:.5rem;padding:.8rem 1.5rem;border-radius:999px;font-weight:700;transition:filter .2s}
+.btn:hover{filter:brightness(1.1)}
+</style>
+</head>
+<body class="font-sans antialiased">
+<a href="#main" class="sr-only focus:not-sr-only focus:fixed focus:left-4 focus:top-4 focus:z-[70] focus:bg-rose focus:text-onrose focus:px-4 focus:py-2 focus:rounded">Skip to content</a>
+
+<!-- SVG icon sprite -->
+<svg width="0" height="0" class="absolute" aria-hidden="true"><defs>
+<linearGradient id="gold" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#f3d9a4"/><stop offset=".5" stop-color="#c9954a"/><stop offset="1" stop-color="#8a5a22"/></linearGradient>
+<linearGradient id="gem" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#f4fbff"/><stop offset=".6" stop-color="#9fd3ec"/><stop offset="1" stop-color="#5d9bc2"/></linearGradient>
+<linearGradient id="silv" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#fff"/><stop offset=".5" stop-color="#b9bfc9"/><stop offset="1" stop-color="#7c838f"/></linearGradient>
+<symbol id="i-gem" viewBox="0 0 24 24"><path d="M6 3h12l4 6-10 12L2 9z M2 9h20 M9 3l-2 6 5 12 5-12-2-6" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/></symbol>
+<symbol id="i-ring" viewBox="0 0 24 24"><circle cx="12" cy="15" r="6" fill="none" stroke="currentColor" stroke-width="1.6"/><path d="M9 5l3-2 3 2-3 4z" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/></symbol>
+<symbol id="i-shield" viewBox="0 0 24 24"><path d="M12 3l8 3v6c0 5-3.5 8-8 9-4.5-1-8-4-8-9V6z M8.5 12l2.5 2.5 4.5-5" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/></symbol>
+<symbol id="i-globe" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9" fill="none" stroke="currentColor" stroke-width="1.6"/><path d="M3 12h18M12 3c3 3 3 15 0 18M12 3c-3 3-3 15 0 18" fill="none" stroke="currentColor" stroke-width="1.6"/></symbol>
+<symbol id="i-tag" viewBox="0 0 24 24"><path d="M3 12V4h8l10 10-8 8z" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/><circle cx="7.5" cy="8.5" r="1.3" fill="currentColor"/></symbol>
+<symbol id="i-pen" viewBox="0 0 24 24"><path d="M4 20l1-5L16 4l4 4L9 19z" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/></symbol>
+<symbol id="i-mail" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2" fill="none" stroke="currentColor" stroke-width="1.6"/><path d="M3 7l9 6 9-6" fill="none" stroke="currentColor" stroke-width="1.6"/></symbol>
+<symbol id="i-wa" viewBox="0 0 24 24"><path d="M4 20l1.3-4.2A8 8 0 1 1 8.4 18.8z M9 9c0 3 3 6 6 6l1.5-1.5-2-1-1 .8c-1-.4-2-1.4-2.4-2.4l.8-1-1-2z" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/></symbol>
+<symbol id="i-fb" viewBox="0 0 24 24"><path d="M14 8h3V4h-3a4 4 0 0 0-4 4v3H7v4h3v6h4v-6h3l1-4h-4V8z" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/></symbol>
+<!-- Product art: ring, necklace, earrings, bracelet -->
+<symbol id="a-ring" viewBox="0 0 200 200"><circle cx="100" cy="125" r="52" fill="none" stroke="url(#gold)" stroke-width="12"/><path d="M78 56l22-26 22 26-22 30z" fill="url(#gem)" stroke="#5d9bc2" stroke-width="2"/><path d="M78 56h44M100 30v56" stroke="#fff" stroke-opacity=".7" stroke-width="1.5"/></symbol>
+<symbol id="a-neck" viewBox="0 0 200 200"><path d="M30 40c0 90 140 90 140 0" fill="none" stroke="url(#gold)" stroke-width="5"/><path d="M88 128l12-16 12 16-12 20z" fill="url(#gem)" stroke="#5d9bc2" stroke-width="2"/></symbol>
+<symbol id="a-ear" viewBox="0 0 200 200"><g id="e"><circle cx="65" cy="50" r="8" fill="url(#silv)"/><path d="M65 58v34" stroke="url(#silv)" stroke-width="4"/><path d="M50 100l15-20 15 20-15 30z" fill="url(#gem)" stroke="#5d9bc2" stroke-width="2"/></g><use href="#e" x="70"/></symbol>
+<symbol id="a-brace" viewBox="0 0 200 200"><ellipse cx="100" cy="105" rx="68" ry="46" fill="none" stroke="url(#gold)" stroke-width="10"/><g fill="url(#gem)" stroke="#5d9bc2"><circle cx="100" cy="59" r="8"/><circle cx="60" cy="72" r="6"/><circle cx="140" cy="72" r="6"/></g></symbol>
+</defs></svg>
+
+<!-- 1. HEADER -->
+<header class="sticky top-0 z-50 border-b border-line bg-bg/90 backdrop-blur" style="top:env(safe-area-inset-top,0px)">
+ <div class="mx-auto flex h-16 max-w-7xl items-center justify-between px-4 lg:px-8">
+  <a href="#home" class="flex items-center gap-2 font-serif text-2xl font-bold" aria-label="Dream Queen Jewelry, home">
+   <svg class="h-8 w-8 text-rose" aria-hidden="true"><use href="#i-gem"/></svg>Dream Queen</a>
+  <nav aria-label="Primary" class="hidden lg:block"><ul class="flex gap-8 text-sm font-medium">
+   <li><a class="hover:text-rose" href="#home">Home</a></li><li><a class="hover:text-rose" href="#about">About</a></li><li><a class="hover:text-rose" href="#services">Services</a></li><li><a class="hover:text-rose" href="#products">Products</a></li><li><a class="hover:text-rose" href="#blog">Blog</a></li><li><a class="hover:text-rose" href="#contact">Contact</a></li></ul></nav>
+  <div class="flex items-center gap-2">
+   <a href="https://wa.me/8801308676479" class="btn hidden bg-rose text-onrose sm:inline-flex">Order on WhatsApp</a>
+   <button id="menuBtn" class="rounded p-2 lg:hidden" aria-expanded="false" aria-controls="mobileNav" aria-label="Open menu">
+    <svg class="h-6 w-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg></button>
+  </div>
+ </div>
+ <nav id="mobileNav" aria-label="Mobile" class="hidden border-t border-line bg-bg lg:hidden"><ul class="flex flex-col px-4 py-3 text-base font-medium">
+  <li><a class="block py-2" href="#home">Home</a></li><li><a class="block py-2" href="#about">About</a></li><li><a class="block py-2" href="#services">Services</a></li><li><a class="block py-2" href="#products">Products</a></li><li><a class="block py-2" href="#blog">Blog</a></li><li><a class="block py-2" href="#contact">Contact</a></li>
+  <li class="pt-2"><a href="https://wa.me/8801308676479" class="btn w-full bg-rose text-onrose">Order on WhatsApp</a></li></ul></nav>
+</header>
+
+<main id="main">
+<!-- 2. HERO -->
+<section id="home" class="mx-auto grid max-w-7xl items-center gap-10 px-4 py-14 lg:grid-cols-2 lg:px-8 lg:py-24">
+ <div>
+  <h1 class="font-serif text-5xl font-semibold leading-[1.05] sm:text-6xl lg:text-7xl">Jewelry made for the day you feel like royalty.</h1>
+  <p class="mt-6 max-w-xl text-lg leading-relaxed text-mute">Gold, silver and diamond pieces priced openly by material, in US dollars, and delivered to your door anywhere in the world.</p>
+  <div class="mt-8 flex flex-wrap gap-3">
+   <a href="#products" class="btn bg-rose text-onrose">Shop by material</a>
+   <a href="#contact" class="btn border border-line bg-surf">Talk to us</a></div>
+ </div>
+ <div class="relative mx-auto aspect-square w-full max-w-md rounded-[2.5rem] bg-deep p-8" role="img" aria-label="Illustration of a gold ring set with a brilliant-cut diamond">
+  <svg viewBox="0 0 200 200" class="h-full w-full"><use href="#a-ring"/></svg>
+  <p class="absolute bottom-5 left-0 right-0 text-center font-serif text-xl text-ondeep">Solitaire in 18K gold</p>
+ </div>
+</section>
+
+<!-- 3. SERVICES / PRODUCTS OVERVIEW -->
+<section id="services" class="border-y border-line bg-surf py-16 lg:py-24">
+ <div class="mx-auto max-w-7xl px-4 lg:px-8">
+  <h2 class="reveal max-w-2xl font-serif text-4xl font-semibold sm:text-5xl">What we make for you</h2>
+  <div class="mt-10 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
+   <article class="reveal rounded-2xl border border-line bg-bg p-6"><svg class="h-9 w-9 text-rose" aria-hidden="true"><use href="#i-ring"/></svg><h3 class="mt-4 text-lg font-bold">Rings and bands</h3><p class="mt-2 text-sm text-mute">Engagement, wedding and everyday rings in your size.</p></article>
+   <article class="reveal rounded-2xl border border-line bg-bg p-6"><svg class="h-9 w-9 text-rose" aria-hidden="true"><use href="#i-gem"/></svg><h3 class="mt-4 text-lg font-bold">Diamond jewelry</h3><p class="mt-2 text-sm text-mute">Certified stones set in gold or platinum.</p></article>
+   <article class="reveal rounded-2xl border border-line bg-bg p-6"><svg class="h-9 w-9 text-rose" aria-hidden="true"><use href="#i-pen"/></svg><h3 class="mt-4 text-lg font-bold">Custom design</h3><p class="mt-2 text-sm text-mute">Send a sketch or photo and we quote it within a day.</p></article>
+   <article class="reveal rounded-2xl border border-line bg-bg p-6"><svg class="h-9 w-9 text-rose" aria-hidden="true"><use href="#i-globe"/></svg><h3 class="mt-4 text-lg font-bold">Worldwide delivery</h3><p class="mt-2 text-sm text-mute">Insured shipping with tracking to every country.</p></article>
+  </div>
+ </div>
+</section>
+
+<!-- PRODUCTS: price by material -->
+<section id="products" class="mx-auto max-w-7xl px-4 py-16 lg:px-8 lg:py-24">
+ <h2 class="reveal font-serif text-4xl font-semibold sm:text-5xl">Priced by material</h2>
+ <p class="mt-3 max-w-xl text-mute">Starting prices in USD. Final price follows the weight of metal and the stone you choose.</p>
+ <div class="mt-10 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
+  <article class="reveal overflow-hidden rounded-2xl border border-line bg-surf"><div class="bg-deep p-6"><svg viewBox="0 0 200 200" class="mx-auto h-40 w-40" role="img" aria-label="Gold necklace with a diamond pendant"><use href="#a-neck"/></svg></div><div class="p-5"><h3 class="font-bold">Gold necklace</h3><p class="text-sm text-mute">14K and 18K gold</p><p class="mt-3 font-serif text-2xl font-semibold text-rose">From $320</p></div></article>
+  <article class="reveal overflow-hidden rounded-2xl border border-line bg-surf"><div class="bg-deep p-6"><svg viewBox="0 0 200 200" class="mx-auto h-40 w-40" role="img" aria-label="Silver drop earrings with diamond accents"><use href="#a-ear"/></svg></div><div class="p-5"><h3 class="font-bold">Silver earrings</h3><p class="text-sm text-mute">925 sterling silver</p><p class="mt-3 font-serif text-2xl font-semibold text-rose">From $45</p></div></article>
+  <article class="reveal overflow-hidden rounded-2xl border border-line bg-surf"><div class="bg-deep p-6"><svg viewBox="0 0 200 200" class="mx-auto h-40 w-40" role="img" aria-label="Diamond solitaire ring"><use href="#a-ring"/></svg></div><div class="p-5"><h3 class="font-bold">Diamond ring</h3><p class="text-sm text-mute">Certified natural diamond</p><p class="mt-3 font-serif text-2xl font-semibold text-rose">From $890</p></div></article>
+  <article class="reveal overflow-hidden rounded-2xl border border-line bg-surf"><div class="bg-deep p-6"><svg viewBox="0 0 200 200" class="mx-auto h-40 w-40" role="img" aria-label="Gold bangle set with small gems"><use href="#a-brace"/></svg></div><div class="p-5"><h3 class="font-bold">Gold bangle</h3><p class="text-sm text-mute">22K traditional gold</p><p class="mt-3 font-serif text-2xl font-semibold text-rose">From $540</p></div></article>
+ </div>
+</section>
+
+<!-- 4. WHY CHOOSE US -->
+<section class="bg-deep py-16 text-ondeep lg:py-24">
+ <div class="mx-auto max-w-7xl px-4 lg:px-8">
+  <h2 class="reveal font-serif text-4xl font-semibold sm:text-5xl">Why customers choose Dream Queen</h2>
+  <div class="mt-10 grid gap-8 sm:grid-cols-2 lg:grid-cols-4">
+   <div class="reveal"><svg class="h-8 w-8 text-rose" aria-hidden="true"><use href="#i-tag"/></svg><h3 class="mt-3 text-lg font-bold">Honest pricing</h3><p class="mt-2 text-sm opacity-80">Every price shows the metal and stone behind it. No hidden markups.</p></div>
+   <div class="reveal"><svg class="h-8 w-8 text-rose" aria-hidden="true"><use href="#i-shield"/></svg><h3 class="mt-3 text-lg font-bold">Verified purity</h3><p class="mt-2 text-sm opacity-80">Hallmarked gold and silver, certified diamonds.</p></div>
+   <div class="reveal"><svg class="h-8 w-8 text-rose" aria-hidden="true"><use href="#i-globe"/></svg><h3 class="mt-3 text-lg font-bold">Shipped worldwide</h3><p class="mt-2 text-sm opacity-80">Insured, tracked delivery. Pay in US dollars.</p></div>
+   <div class="reveal"><svg class="h-8 w-8 text-rose" aria-hidden="true"><use href="#i-mail"/></svg><h3 class="mt-3 text-lg font-bold">Direct support</h3><p class="mt-2 text-sm opacity-80">Message us by email or WhatsApp and talk to the owner’s team.</p></div>
+  </div>
+ </div>
+</section>
+
+<!-- 5. ABOUT -->
+<section id="about" class="mx-auto grid max-w-7xl items-center gap-10 px-4 py-16 lg:grid-cols-2 lg:px-8 lg:py-24">
+ <div class="rounded-[2rem] bg-surf border border-line p-8" role="img" aria-label="Illustration of a gold bangle">
+  <svg viewBox="0 0 200 200" class="mx-auto h-64 w-64"><use href="#a-brace"/></svg></div>
+ <div class="reveal">
+  <h2 class="font-serif text-4xl font-semibold sm:text-5xl">A family-minded jeweler with an accountant’s honesty</h2>
+  <p class="mt-5 leading-relaxed text-mute">Dream Queen Jewelry began with a simple idea: buying gold should not feel like guessing. Our founder and CEO, Abu Hasan, holds a BBA (Hons.) in Accounting, and he built the business on clear numbers: the weight of the metal, the grade of the stone and the price you pay.</p>
+  <p class="mt-4 leading-relaxed text-mute">Today we serve customers on every continent, with pieces made to order and checked before they ship.</p>
+  <a href="#contact" class="btn mt-6 bg-rose text-onrose">Meet the team</a>
+ </div>
+</section>
+
+<!-- 6. TESTIMONIALS + LOGOS -->
+<section class="border-y border-line bg-surf py-16 lg:py-24" aria-labelledby="tt">
+ <div class="mx-auto max-w-3xl px-4 text-center">
+  <h2 id="tt" class="font-serif text-4xl font-semibold sm:text-5xl">Kind words from customers</h2>
+  <div class="mt-8" role="region" aria-roledescription="carousel" aria-label="Testimonials">
+   <div id="slides" aria-live="polite">
+    <figure><blockquote class="font-serif text-2xl leading-snug">The ring arrived earlier than promised and the diamond looks even better in person.</blockquote><figcaption class="mt-4 text-sm text-mute">Sarah M., London</figcaption></figure>
+    <figure hidden><blockquote class="font-serif text-2xl leading-snug">I liked seeing the price broken down by gold weight. It made the decision easy.</blockquote><figcaption class="mt-4 text-sm text-mute">Daniel R., Toronto</figcaption></figure>
+    <figure hidden><blockquote class="font-serif text-2xl leading-snug">They turned my grandmother’s sketch into a bangle. I cried when I opened the box.</blockquote><figcaption class="mt-4 text-sm text-mute">Aisha K., Dubai</figcaption></figure>
+   </div>
+   <div class="mt-6 flex justify-center gap-3">
+    <button id="prev" class="btn border border-line px-4" aria-label="Previous testimonial">Previous</button>
+    <button id="next" class="btn border border-line px-4" aria-label="Next testimonial">Next</button></div>
+  </div>
+ </div>
+ <ul class="mx-auto mt-14 flex max-w-5xl flex-wrap items-center justify-center gap-x-10 gap-y-4 px-4 font-serif text-xl text-mute" aria-label="Retail and bridal partners">
+  <li>Bridal Lane</li><li>Maison Aurel</li><li>Orchid &amp; Co.</li><li>Silk Route Gifts</li><li>The Gold Atelier</li></ul>
+</section>
+
+<!-- 7. STATS -->
+<section class="mx-auto max-w-7xl px-4 py-16 lg:px-8 lg:py-24" aria-label="Achievements">
+ <dl class="grid grid-cols-2 gap-8 text-center lg:grid-cols-4">
+  <div><dd class="font-serif text-5xl font-semibold text-rose"><span data-count="12000">0</span>+</dd><dt class="mt-1 text-sm text-mute">Pieces delivered</dt></div>
+  <div><dd class="font-serif text-5xl font-semibold text-rose"><span data-count="48">0</span></dd><dt class="mt-1 text-sm text-mute">Countries served</dt></div>
+  <div><dd class="font-serif text-5xl font-semibold text-rose"><span data-count="9500">0</span>+</dd><dt class="mt-1 text-sm text-mute">Happy customers</dt></div>
+  <div><dd class="font-serif text-5xl font-semibold text-rose"><span data-count="98">0</span>%</dd><dt class="mt-1 text-sm text-mute">Five-star reviews</dt></div>
+ </dl>
+</section>
+
+<!-- 8. BLOG -->
+<section id="blog" class="border-t border-line bg-surf py-16 lg:py-24">
+ <div class="mx-auto max-w-7xl px-4 lg:px-8">
+  <h2 class="reveal font-serif text-4xl font-semibold sm:text-5xl">From the journal</h2>
+  <div class="mt-10 grid gap-6 md:grid-cols-3">
+   <article class="reveal rounded-2xl border border-line bg-bg p-6"><time class="text-sm text-mute" datetime="2026-11-10">Nov 10, 2026</time><h3 class="mt-2 font-serif text-2xl font-semibold">How gold karats change your price</h3><p class="mt-2 text-sm text-mute">14K, 18K or 22K: what the numbers mean and which suits daily wear.</p><a href="#contact" class="mt-4 inline-block font-bold text-rose underline">Read more<span class="sr-only"> about gold karats</span></a></article>
+   <article class="reveal rounded-2xl border border-line bg-bg p-6"><time class="text-sm text-mute" datetime="2026-10-28">Oct 28, 2026</time><h3 class="mt-2 font-serif text-2xl font-semibold">Choosing a diamond: the four Cs</h3><p class="mt-2 text-sm text-mute">Cut, color, clarity and carat, explained without jargon.</p><a href="#contact" class="mt-4 inline-block font-bold text-rose underline">Read more<span class="sr-only"> about diamonds</span></a></article>
+   <article class="reveal rounded-2xl border border-line bg-bg p-6"><time class="text-sm text-mute" datetime="2026-10-12">Oct 12, 2026</time><h3 class="mt-2 font-serif text-2xl font-semibold">Keeping silver bright for years</h3><p class="mt-2 text-sm text-mute">Simple storage and cleaning habits that prevent tarnish.</p><a href="#contact" class="mt-4 inline-block font-bold text-rose underline">Read more<span class="sr-only"> about silver care</span></a></article>
+  </div>
+ </div>
+</section>
+
+<!-- 9. CTA BANNER -->
+<section class="bg-rose py-14 text-onrose">
+ <div class="mx-auto flex max-w-7xl flex-col items-center gap-6 px-4 text-center lg:flex-row lg:justify-between lg:px-8 lg:text-left">
+  <h2 class="max-w-xl font-serif text-3xl font-semibold sm:text-4xl">Ready to find your piece? Message us and get a quote today.</h2>
+  <a href="https://wa.me/8801308676479" class="btn bg-deep text-ondeep">Chat on WhatsApp</a>
+ </div>
+</section>
+</main>
+
+<!-- 10. FOOTER -->
+<footer id="contact" class="bg-deep text-ondeep">
+ <div class="mx-auto grid max-w-7xl gap-10 px-4 py-14 sm:grid-cols-2 lg:grid-cols-4 lg:px-8">
+  <div><p class="font-serif text-2xl font-bold">Dream Queen Jewelry</p><p class="mt-3 text-sm opacity-80">Gold, silver and diamond jewelry, shipped worldwide. CEO: Abu Hasan, BBA (Hons.) in Accounting.</p></div>
+  <nav aria-label="Footer"><h2 class="font-bold">Sitemap</h2><ul class="mt-3 space-y-2 text-sm opacity-90"><li><a class="hover:underline" href="#home">Home</a></li><li><a class="hover:underline" href="#about">About</a></li><li><a class="hover:underline" href="#services">Services</a></li><li><a class="hover:underline" href="#products">Products</a></li><li><a class="hover:underline" href="#blog">Blog</a></li></ul></nav>
+  <div><h2 class="font-bold">Contact</h2><ul class="mt-3 space-y-2 text-sm">
+   <li><a class="flex items-center gap-2 hover:underline" href="mailto:mdabuhasan8679@gmail.com"><svg class="h-5 w-5" aria-hidden="true"><use href="#i-mail"/></svg>mdabuhasan8679@gmail.com</a></li>
+   <li><a class="flex items-center gap-2 hover:underline" href="https://wa.me/8801308676479"><svg class="h-5 w-5" aria-hidden="true"><use href="#i-wa"/></svg>WhatsApp 01308676479</a></li>
+   <li><a class="flex items-center gap-2 hover:underline" href="https://www.facebook.com/" rel="noopener" target="_blank"><svg class="h-5 w-5" aria-hidden="true"><use href="#i-fb"/></svg>Facebook</a></li></ul>
+   <div class="mt-4 flex gap-3">
+    <a href="mailto:mdabuhasan8679@gmail.com" aria-label="Email" class="rounded-full border border-white/30 p-2"><svg class="h-5 w-5" aria-hidden="true"><use href="#i-mail"/></svg></a>
+    <a href="https://wa.me/8801308676479" aria-label="WhatsApp" class="rounded-full border border-white/30 p-2"><svg class="h-5 w-5" aria-hidden="true"><use href="#i-wa"/></svg></a>
+    <a href="https://www.facebook.com/" aria-label="Facebook" rel="noopener" target="_blank" class="rounded-full border border-white/30 p-2"><svg class="h-5 w-5" aria-hidden="true"><use href="#i-fb"/></svg></a></div></div>
+  <div><h2 class="font-bold">Newsletter</h2><p class="mt-3 text-sm opacity-80">New collections and gold-price notes, once a month.</p>
+   <form id="news" class="mt-3 flex gap-2" novalidate><label for="em" class="sr-only">Email address</label>
+    <input id="em" type="email" required placeholder="you@example.com" class="min-w-0 flex-1 rounded-full bg-white px-4 py-2 text-sm text-[#2a1233]">
+    <button class="btn bg-rose px-4 py-2 text-onrose">Subscribe</button></form>
+   <p id="newsMsg" class="mt-2 text-sm" role="status"></p></div>
+ </div>
+ <p class="border-t border-white/15 py-5 text-center text-xs opacity-70">© 2026 Dream Queen Jewelry. All prices in US dollars.</p>
+</footer>
+
+<script>
+/* Mobile menu */
+const mb=document.getElementById('menuBtn'),mn=document.getElementById('mobileNav');
+mb.addEventListener('click',()=>{const o=mn.classList.toggle('hidden')===false;mb.setAttribute('aria-expanded',o);mb.setAttribute('aria-label',o?'Close menu':'Open menu')});
+mn.addEventListener('click',e=>{if(e.target.closest('a'))mn.classList.add('hidden'),mb.setAttribute('aria-expanded','false')});
+/* Testimonial carousel */
+const sl=[...document.querySelectorAll('#slides figure')];let ix=0;
+const go=d=>{sl[ix].hidden=true;ix=(ix+d+sl.length)%sl.length;sl[ix].hidden=false};
+document.getElementById('prev').onclick=()=>go(-1);document.getElementById('next').onclick=()=>go(1);
+/* Scroll reveal + counters (Intersection Observer) */
+const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}}),{threshold:.15});
+document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
+const reduce=matchMedia('(prefers-reduced-motion:reduce)').matches;
+const co=new IntersectionObserver(es=>es.forEach(e=>{if(!e.isIntersecting)return;co.unobserve(e.target);
+ const t=+e.target.dataset.count,s=performance.now(),d=1400;
+ const f=n=>{const p=reduce?1:Math.min((n-s)/d,1);e.target.textContent=Math.round(t*p).toLocaleString('en-US');if(p<1)requestAnimationFrame(f)};requestAnimationFrame(f)}),{threshold:.5});
+document.querySelectorAll('[data-count]').forEach(el=>co.observe(el));
+/* Newsletter: front-end validation only (connect to your mail service) */
+document.getElementById('news').addEventListener('submit',e=>{e.preventDefault();const i=document.getElementById('em'),m=document.getElementById('newsMsg');
+ if(i.validity.valid&&i.value){m.textContent='Thank you. You are on the list.';i.value=''}else m.textContent='Enter a valid email address.'});
+</script>
+</body>
+</html>
